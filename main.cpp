@@ -294,6 +294,7 @@ int main(void)
     {
 
         // prase = {x-25,y-15,150,150};
+
         if (!pause)
         {
 
@@ -868,7 +869,9 @@ int main(void)
 
             rot += GetMouseWheelMove();
         }
-
+        ///////////////
+        // PAUSE SCREEN
+        ///////////////
         if (IsKeyReleased(KEY_SPACE))
         {
             pause = !pause;
@@ -912,17 +915,17 @@ int main(void)
             pokupljen = false;
         }
 
-        // METAK || HITBOX
+        // BULLET || HITBOX
 
         DrawCircle(shellX, shellY, 10, BLACK);
 
-        // METAK || HITBOX
+        // BULLET || HITBOX
 
-        // prase go boom boom
+        // piggy go boom boom
 
         DrawTextureRec(explo, sourceExplo, Vector2{boomX, boomY}, WHITE);
 
-        // prase go boom boom
+        // piggy go boom boom
 
         // DrawTextureRec(gunZ,sourceGun,Vector2{(float)gX,(float)gY},WHITE);
 
