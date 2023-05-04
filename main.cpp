@@ -305,12 +305,12 @@ int main(void)
             boop++;
             frame++;
             anim++;
-
+            /*
             if (!stop)
             {
                 PlaySoundMulti(intro);
                 stop = true;
-            }
+            }*/
             if (frame <= 500)
                 x -= 1;
             if (frame > 500)
